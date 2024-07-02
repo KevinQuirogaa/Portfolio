@@ -28,7 +28,7 @@
                             <img :src="IconGitHub" alt="GitHub" class="w-6 h-6 mr-2">
                             GitHub
                         </a>
-                        <a href="KevinQuirogaCV.pdf" target="_blank" class="flex items-center text-white icon-link">
+                        <a :href="pdfUrl" target="_blank" class="flex items-center text-white icon-link">
                             <img :src="IconCV" alt="Hoja de Vida" class="w-6 h-6 mr-2">
                             CV
                         </a>
@@ -44,6 +44,8 @@ import IconGmail from '@/assets/svg/gmail.svg'
 import IconLinkedIn from '@/assets/svg/linkedin.svg'
 import IconGitHub from '@/assets/svg/github.svg'
 import IconCV from '@/assets/svg/cv.svg'
+import pdfUrl from '@/assets/document/KevinQuirogaCV.pdf';
+
 </script>
 
 <style scoped>
