@@ -1,41 +1,59 @@
 <template>
     <main class="container mx-auto mt-10 px-4 mb-12">
-            <div class="flex flex-col items-center mb-8">
-                <div class="flex items-center">
-                    <img :src="fotoCV" alt="Kevin Quiroga" class="rounded-full w-20 h-20 mr-4 border-4 border-blue-400">
-                    <h1 class="text-5xl font-bold">Kevin Gomez Quiroga<span class="text-blue-400">.</span></h1>
+        <div class="flex flex-col items-center mb-8">
+            <div class="flex flex-col items-center mb-6">
+                <div class="relative mb-3">
+                    <img :src="fotoCV" alt="Kevin Quiroga"
+                        class="rounded-full w-32 h-32 object-cover border-4 border-blue-400 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="absolute -bottom-2 -right-2 bg-blue-400 rounded-full p-2 shadow-md">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <h2 class="text-3xl text-gray-400 mb-2">Desarrollador de Software</h2>
-                    <div class="flex items-center justify-center text-blue-400 mb-4">
-                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm light-animation">
-                            Disponible para trabajar
-                        </span>
-                    </div>
-                    <p class="text-lg mb-6">
-                        Soy un desarrollador de software con experiencia en la creación de APIs RESTful, el manejo de los diferentes tipos de estados de un Endpoint y su estructura, además de tener conocimientos en el diseño de bases de datos relacionales. He trabajado con tecnologías como <span class="text-blue-400">Laravel</span>, <span class="text-blue-400">Symfony</span>, <span class="text-blue-400">PHP</span>, <span class="text-blue-400">ASP.NET Core Web Api</span>, <span class="text-blue-400">JavaScript</span>, <span class="text-blue-400">React JS</span> y <span class="text-blue-400">MySQL</span>.
-                    </p>
-                    <div class="flex space-x-6 justify-center">
-                        <a href="mailto:kgomezquiroga1@gmail.com" class="flex items-center text-white icon-link">
-                            <img :src="IconGmail" alt="Gmail" class="w-6 h-6 mr-2">
-                            kgomezquiroga1@gmail.com
-                        </a>
-                        <a href="https://www.linkedin.com/in/kevin-gomez-quiroga-279316302/" target="_blank" class="flex items-center text-white icon-link">
-                            <img :src="IconLinkedIn" alt="LinkedIn" class="w-6 h-6 mr-2">
-                            LinkedIn
-                        </a>
-                        <a href="https://github.com/KevinKiroga?tab=repositories" target="_blank" class="flex items-center text-white icon-link">
-                            <img :src="IconGitHub" alt="GitHub" class="w-6 h-6 mr-2">
-                            GitHub
-                        </a>
-                        <a :href="pdfUrl" target="_blank" class="flex items-center text-white icon-link">
-                            <img :src="IconCV" alt="Hoja de Vida" class="w-6 h-6 mr-2">
-                            CV
-                        </a>
-                    </div>
+                <h1 class="text-5xl font-bold text-center"><span class="text-blue-400">&lt;</span>Kevin Gomez
+                    Quiroga<span class="text-blue-400">/&gt;</span></h1>
+            </div>
+            <div class="text-center">
+                <h2 class="text-3xl text-gray-400 mb-3">Programador Fullstack Junior</h2>
+                <div class="flex items-center justify-center text-blue-400 mb-4">
+                    <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm light-animation">
+                        Disponible para trabajar
+                    </span>
+                </div>
+                <p class="text-lg mb-6">
+                    Desarrollador Fullstack con experiencia en el desarrollo de aplicaciones web y gestión de bases de
+                    datos. Especializado en la creación de APIs RESTful con arquitecturas MVC y N-Capas, utilizando
+                    tecnologías como Laravel, ASP.NET Core, Angular y SQL Server.
+
+                    Experto en optimización de código, pruebas unitarias y metodologías ágiles. Comprometido con la
+                    calidad del software y la mejora continua, destacando por su capacidad de análisis y resolución de
+                    problemas.
+                </p>
+                <div class="flex space-x-6 justify-center">
+                    <a href="mailto:kgomezquiroga2@gmail.com" class="flex items-center text-white icon-link">
+                        <img :src="IconGmail" alt="Gmail" class="w-6 h-6 mr-2">
+                        kgomezquiroga2@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/kevin-quiroga-b81824357/" target="_blank"
+                        class="flex items-center text-white icon-link">
+                        <img :src="IconLinkedIn" alt="LinkedIn" class="w-6 h-6 mr-2">
+                        Kevin Quiroga
+                    </a>
+                    <a href="https://github.com/KevinQuirogaa" target="_blank"
+                        class="flex items-center text-white icon-link">
+                        <img :src="IconGitHub" alt="GitHub" class="w-6 h-6 mr-2">
+                        KevinQuirogaa
+                    </a>
+                    <a :href="pdfUrl" target="_blank" class="flex items-center text-white icon-link">
+                        <img :src="IconCV" alt="Hoja de Vida" class="w-6 h-6 mr-2">
+                        CV
+                    </a>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
 </template>
 
 <script setup>
